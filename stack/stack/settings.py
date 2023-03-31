@@ -62,6 +62,8 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
+# tells to my database whats my pipeline specifications
 ITEM_PIPELINES = {
     "stack.pipelines.StackPipeline": 300,
 }

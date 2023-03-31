@@ -2,6 +2,8 @@ from scrapy import Spider
 from scrapy.selector import Selector
 from stack.items import StackItem
 
+# Specify the name of the block code that i want to mine in the HTML
+
 
 class StackSpider(Spider):
     name = "stack"

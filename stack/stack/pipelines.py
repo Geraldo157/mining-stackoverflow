@@ -1,5 +1,7 @@
 import pymongo
 
+# connect my pipeline to the database using pymongo to connect to mongoDB
+
 
 class StackPipeline(object):
 
