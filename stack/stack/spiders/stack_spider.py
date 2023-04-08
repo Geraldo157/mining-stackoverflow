@@ -2,8 +2,6 @@ from scrapy import Spider
 from scrapy.selector import Selector
 from stack.items import StackItem
 
-# Specify the name of the block code that i want to mine in the HTML
-
 
 class StackSpider(Spider):
     name = "stack"
@@ -11,6 +9,8 @@ class StackSpider(Spider):
     start_urls = [
         "http://stackoverflow.com/questions?pagesize=50&sort=newest",
     ]
+    
+    # Specify what in the page I want to mine using the HTML reference.
 
     def parse(self, response):
         questions = Selector(response).xpath('//div[@class="s-post-summary--content"]/h3')
